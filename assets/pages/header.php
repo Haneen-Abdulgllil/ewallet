@@ -22,7 +22,7 @@ if(isset($_SESSION['Auth'])){ ?>
   <div class="">
   <a class="btn btn-sm btn-dark" href="assets/php/process.php?logout">Logout</a>
   
-</div> 
+  </div> 
 <?php
 }else{
   ?>

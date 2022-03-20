@@ -5,7 +5,7 @@ require_once "database.php";
 // for including pages in index.php
 function viewPage($page, $page_title = "")
 {
-    include "assets/pages/$page.php";
+    include "./assets/pages/$page.php";
 }
 
 //for creating full site urls

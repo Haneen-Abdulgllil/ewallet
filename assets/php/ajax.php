@@ -1,11 +1,16 @@
+
+
+
 <?php
 require_once('functions.php');
-sleep(1);
+require_once('../pages/home.php');
+
+
 if(isset($_GET['sendmoney'])){
 $response = array();
 if(checkDuplicateMobile($_POST['user_mobile_no'])){
 $user=$_SESSION['userdata'];
-$balance = $user['balance']=getCreditedBalance($user['id'])- getDebitedBalance($user['id']);
+$balance = $user['balance'] = getCreditedBalance($user['id'])- getDebitedBalance($user['id']);
 if($balance<$_POST['amount']){
     $response['txn_status']=false;
     $response['msg']="you have insufficient balance";

@@ -6,22 +6,6 @@ require_once('functions.php');
 if(isset($_GET['signup'])){
 $response = validateSignup($_POST); // calling validating function from functions.php
 
-if($response['status']){
-// statement if validation status is true
-if(createUser($_POST)){
-header("location:../../?login=newuser");
-}else{
-header("location:../../?signup=signup_failed");
-}
-
-
-}else{
-// statement if validation status is false
-
-    $_SESSION['form_data']=$_POST;
-    $_SESSION['error'] = $response;
-    header("location:../../?signup");
-}
 }
 
 

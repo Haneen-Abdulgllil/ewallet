@@ -1,6 +1,6 @@
 <div class="container">
 <div class="shadow p-5 col-6 m-auto mt-5 rounded border" style="">
-<form id="signup_form" method="post" action="assets/php/process.php?signup">
+<form id="signup_form" method="post" action="../php/process.php                                                                                                                                          .php">
 <div class="mb-3">
     <label for="full-name" class="form-label">Full Name</label>
     <input type="text" class="form-control" id="full-name" value="<?=showFormValue('full_name')?>" name="full_name" aria-describedby="emailHelp">
